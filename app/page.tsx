@@ -17,7 +17,7 @@ export default function Home() {
               src={"/profile.png"}
               alt="main image"
               draggable={false}
-              className="w-full"
+              className="w-full h-full"
             />
           </div>
           <div className="z-20">
