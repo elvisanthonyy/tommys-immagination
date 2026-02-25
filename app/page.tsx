@@ -1,18 +1,29 @@
 "use client";
-
+import Image from "next/image";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import { FaUser, FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className="flex relative bg-linear-to-b from-background to-white/50 flex-col min-h-screen items-center">
       <Nav />
-      <main className="min-h-[90dvh] flex flex-col items-center w-full pt-30">
+      <main className="min-h-dvh flex flex-col items-center w-full pt-30">
         <div className="w-full px-8 items-center relative h-80 flex overflow-hidden">
-          <div className="h-60 flex items-center justify-center z-5 w-60 rounded-full absolute top-[50%] -translate-y-[50%] -right-20 bg-white"></div>
+          <div className="h-60 flex overflow-hidden items-center justify-center z-5 w-60 rounded-full absolute top-[50%] -translate-y-[50%] -right-20 bg-white">
+            <Image
+              height={1000}
+              width={1000}
+              src={"/profile.png"}
+              alt="main image"
+              draggable={false}
+              className="w-full"
+            />
+          </div>
           <div className="z-20">
-            <div className="text-xl font-bold">Tommy's Immagination</div>
+            <div className="text-xl font-bold bg-white px-3 rounded-2xl py-2 shadow-2xl mb-2 border">
+              Tommy's Immagination
+            </div>
             <div className="font-light ml-1 text-black/60 text-sm">
               Fashion Designer
             </div>
