@@ -21,7 +21,7 @@ export default function Home() {
             />
           </div>
           <div className="z-20">
-            <div className="text-xl font-bold bg-white px-3 rounded-2xl py-2 shadow-2xl mb-2 border">
+            <div className="text-xl font-bold bg-white/10 backdrop-blur-2xl px-3 rounded-2xl py-2 shadow-2xl mb-2 border">
               Tommy's Immagination
             </div>
             <div className="font-light ml-1 text-black/60 text-sm">
